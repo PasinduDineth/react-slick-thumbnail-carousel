@@ -1,6 +1,5 @@
-
 .slider-wrapper {
-    width: 550px;
+    width: 650px;
     margin: auto;
   }
   .slick-slide {
@@ -16,14 +15,30 @@
   }
 .thumbnail-slider-wrap {
     margin-top: 15px;
-    height: 200px;
   }
   .thumbnail-slider-wrap .slick-track .slick-slide img {
-    width: 70%;
+    width: 90%;
+    height: 65px;
   }
   .slick-next {
     right: 0px !important; 
   }
   .slick-prev {
     left: 0px !important; 
+  }
+  .slick-next::before {
+    font-family: "Font Awesome 5 Free" !important;
+      content: '\f054' !important;
+      font-weight: 900;
+      font-size: 15px !important;
+  }
+  .slick-prev::before {
+    font-family: "Font Awesome 5 Free" !important;
+      content: '\f053' !important;
+      font-weight: 900;
+      font-size: 15px !important;
+  }
+
+  .slick-list {
+    padding: 0px !important;
   }

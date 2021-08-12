@@ -6,6 +6,28 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "flex", backgroundColor: "rgba(0,0,0,0.5)", zIndex:1, height: "100%", justifyContent: 'center', alignItems: 'center'}}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "flex", backgroundColor: "rgba(0,0,0,0.5)", zIndex:1, height: "100%", justifyContent: 'center', alignItems: 'center' }}
+      onClick={onClick}
+    />
+  );
+}
+
 function App() {
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
@@ -24,19 +46,19 @@ function App() {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    fade: true,
     asNavFor: '.slider-nav'
   };
 
   const settingsThumbs = {
-    slidesToShow: 3,
+    slidesToShow: 5,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     dots: false,
     centerMode: true,
     swipeToSlide: true,
     focusOnSelect: true,
-    centerPadding: '10px'
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />
   };
 
   const slidesData = [
