@@ -1,30 +1,68 @@
 .main-view{
     display: flex;
-    height: 500px;
-}
-.content-main {
-    flex: 0.75;
-    max-width: 100%;
+    flex-wrap: wrap;
 }
 
+.content-main {
+    max-width: 100% !important;
+}
 .tabs-main {
-    flex: 0.25;
-    background-color: red;
     display: flex;
     flex-direction: column;
 }
+ /* @media only screen and (max-width: 600px) {
+    .tabs-main {
+        width: 100%;
+    }
+ }
+*/
+ @media only screen and (max-width: 767px) {
+    .tabs-main {
+        width: 100%;
+    }
+ }
+ 
+ @media only screen and (min-width: 768px) {
+    .content-main {
+        max-width: 500px !important;
+    }
+ }
+ 
+ @media only screen and (min-width: 992px) {
+    .content-main {
+        max-width: 600px !important;
+    }
+ }
+ 
+ @media only screen and (min-width: 1200px) {
+    .content-main {
+        max-width: 700px !important;
+    }
+ } 
 .carousel-tab {
-    width: 100%;
-    background-color: saddlebrown;
+    background-color: rgba(231, 230, 230, 0.651);
     height: 100%;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px 0px 50px;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.274);
 }
 
 .map-tab {
-    background-color: salmon;
+    background-color: rgba(231, 230, 230, 0.651);
     height: 100%;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.274);
 }
 
 .details-tab {
-    background-color: sandybrown;
+    background-color: rgba(231, 230, 230, 0.651);
     height: 100%;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(187, 187, 187, 0.274);
 }

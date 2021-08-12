@@ -11,10 +11,10 @@ export default class HorizontalTabs extends Component {
                 </div>
                 <div className="tabs-main">
                     <div className="carousel-tab">
-                        <p>Carousel</p>
+                        <p>View Images</p>
                     </div>
                     <div className="map-tab">
-                        <p>Msp</p>
+                        <p>View Map</p>
                     </div>
                     <div className="details-tab">
                         <p>Details</p>

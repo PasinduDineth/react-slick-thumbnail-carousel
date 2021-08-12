@@ -1,9 +1,9 @@
 .slider-wrapper {
-    width: 650px;
+    /* width: 650px; */
     margin: auto;
   }
   .slick-slide {
-    text-align: center;
+    text-align: center !important;
     position: relative;
   }
   .slick-slide:focus {
