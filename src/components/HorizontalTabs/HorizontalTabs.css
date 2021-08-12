@@ -1,0 +1,30 @@
+.main-view{
+    display: flex;
+    height: 500px;
+}
+.content-main {
+    flex: 0.75;
+    max-width: 100%;
+}
+
+.tabs-main {
+    flex: 0.25;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+.carousel-tab {
+    width: 100%;
+    background-color: saddlebrown;
+    height: 100%;
+}
+
+.map-tab {
+    background-color: salmon;
+    height: 100%;
+}
+
+.details-tab {
+    background-color: sandybrown;
+    height: 100%;
+}

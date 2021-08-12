@@ -1,0 +1,29 @@
+
+.slider-wrapper {
+    width: 550px;
+    margin: auto;
+  }
+  .slick-slide {
+    text-align: center;
+    position: relative;
+  }
+  .slick-slide:focus {
+    outline: none;
+  }
+  .slick-slide-image {
+    max-width: 100%;
+    height: auto;
+  }
+.thumbnail-slider-wrap {
+    margin-top: 15px;
+    height: 200px;
+  }
+  .thumbnail-slider-wrap .slick-track .slick-slide img {
+    width: 70%;
+  }
+  .slick-next {
+    right: 0px !important; 
+  }
+  .slick-prev {
+    left: 0px !important; 
+  }
