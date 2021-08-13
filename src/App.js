@@ -1,11 +1,13 @@
 import Carousel from "./components/carousel/Carousel"
 import HorizontalTabs from "./components/HorizontalTabs/HorizontalTabs"
+import RoomSection from "./components/RoomSection/roomSection"
 import "./App.css"
 function App() {
   return (
-    <div>
+    <div className="bg">
       {/* <Carousel/> */}
-        <HorizontalTabs/>
+        {/* <HorizontalTabs/> */}
+        <RoomSection/>
     </div>
   );
 }
